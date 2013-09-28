@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CONFIG=""
+
+for i in $(ls etc/*.config); do
+  CONFIG="$CONFIG -config $i"
+done
+
+erl -pa lib/*/ebin -pa ebin $CONFIG -args_file etc/vm.args
