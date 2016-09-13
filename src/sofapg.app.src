@@ -1,0 +1,14 @@
+{application, sofapg,
+ [
+  {description, ""},
+  {vsn, git},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  ranch,
+                  cowboy
+                 ]},
+  {mod, {sofapg_app, []}},
+  {env, []}
+ ]}.
