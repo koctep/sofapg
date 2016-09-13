@@ -1,5 +1,5 @@
 ## Name of the node
--sname app
+-sname sofapg
 
 ## Heartbeat management; auto-restarts VM if it dies or becomes unresponsive
 ## (Disabled by default..use with caution!)
@@ -27,5 +27,6 @@
 ## Run code at startup.
 -eval "application:start(lager)"
 -eval "application:start(sync)"
+-s sofapg
 
 ## Cookie for distributed erlang (auto-generated)

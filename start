@@ -6,4 +6,4 @@ for i in $(ls etc/*.config); do
   CONFIG="$CONFIG -config $i"
 done
 
-erl -pa lib/*/ebin -pa ebin $CONFIG -args_file etc/vm.args
+erl -pa lib/*/ebin -pa ebin $CONFIG -args_file etc/vm.args -boot start_sasl
